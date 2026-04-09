@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Press & Media — Ann Meleney</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .press-list {
+      max-width: 740px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .press-item {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 0 2.5rem;
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+
+    .press-item:first-child {
+      border-top: 1px solid var(--border);
+    }
+
+    .press-date {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: var(--ink-light);
+      text-transform: uppercase;
+      padding-top: 0.35rem;
+      line-height: 1.5;
+    }
+
+    .press-date span {
+      display: block;
+    }
+
+    .press-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .press-publication {
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--dusty-rose);
+    }
+
+    .press-title {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.25;
+      transition: color 0.2s;
+    }
+
+    .press-item a:hover .press-title {
+      color: var(--dusty-rose);
+    }
+
+    .press-excerpt {
+      font-size: 0.92rem;
+      color: var(--ink-light);
+      line-height: 1.75;
+      margin-top: 0.3rem;
+    }
+
+    .press-read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      transition: color 0.2s;
+    }
+
+    .press-read-more::after {
+      content: '→';
+      transition: transform 0.2s;
+    }
+
+    .press-item a:hover .press-read-more {
+      color: var(--ink);
+    }
+
+    .press-item a:hover .press-read-more::after {
+      transform: translateX(3px);
+    }
+
+    .press-page-hero {
+      padding-top: 10rem;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+
+    .press-page-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+
+    .press-page-hero p {
+      font-size: 0.82rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+    }
+
+    @media (max-width: 540px) {
+      .press-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-name">Ann Meleney</a>
+    <ul>
+      <li><a href="index.html#gallery">Gallery</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="media.html">Press</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="press-page-hero fade-in">
+      <h1>Press</h1>
+      <p>Selected media coverage</p>
+    </div>
+
+    <section style="padding-top: 2rem;">
+      <div class="press-list">
+
+        <div class="press-item fade-in">
+          <div class="press-date">
+            <span>Apr 2</span>
+            <span>2026</span>
+          </div>
+          <div class="press-body">
+            <span class="press-publication">The Martha's Vineyard Times</span>
+            <a href="https://www.mvtimes.com/2026/04/02/featherstones-30-x-30-exhibition/" target="_blank" rel="noopener">
+              <div class="press-title">Featherstone's '30 x 30' Exhibition</div>
+              <!-- Optional: add a short excerpt below -->
+              <!-- <p class="press-excerpt">Your excerpt here.</p> -->
+              <span class="press-read-more">Read article</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="press-item fade-in">
+          <div class="press-date">
+            <span>Feb 11</span>
+            <span>2026</span>
+          </div>
+          <div class="press-body">
+            <span class="press-publication">The Martha's Vineyard Times</span>
+            <a href="https://www.mvtimes.com/2026/02/11/kiss-kiss-hug-hug-featherstone-center-arts/" target="_blank" rel="noopener">
+              <div class="press-title">'Kiss, Kiss, Hug, Hug' at Featherstone Center for the Arts</div>
+              <!-- <p class="press-excerpt">Your excerpt here.</p> -->
+              <span class="press-read-more">Read article</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="press-item fade-in">
+          <div class="press-date">
+            <span>Jun 11</span>
+            <span>2025</span>
+          </div>
+          <div class="press-body">
+            <span class="press-publication">The Martha's Vineyard Times</span>
+            <a href="https://www.mvtimes.com/2025/06/11/embrace-mv-exhibit-featherstone/" target="_blank" rel="noopener">
+              <div class="press-title">'Embrace MV' Exhibit at Featherstone</div>
+              <!-- <p class="press-excerpt">Your excerpt here.</p> -->
+              <span class="press-read-more">Read article</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="press-item fade-in">
+          <div class="press-date">
+            <span>Feb 14</span>
+            <span>2024</span>
+          </div>
+          <div class="press-body">
+            <span class="press-publication">The Martha's Vineyard Times</span>
+            <a href="https://www.mvtimes.com/2024/02/14/leaping-love-featherstones-exhibit/" target="_blank" rel="noopener">
+              <div class="press-title">Leaping for Love at Featherstone's Exhibit</div>
+              <!-- <p class="press-excerpt">Your excerpt here.</p> -->
+              <span class="press-read-more">Read article</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="press-item fade-in">
+          <div class="press-date">
+            <span>May 9</span>
+            <span>2022</span>
+          </div>
+          <div class="press-body">
+            <span class="press-publication">The Vineyard Gazette</span>
+            <a href="https://vineyardgazette.com/photography/native-flora-blooms-featherstones-art-flowers" target="_blank" rel="noopener">
+              <div class="press-title">Native Flora Blooms at Featherstone's Art of Flowers</div>
+              <p class="press-excerpt">Social commentary by Ann Meleney with <em>Big Bad Wolf</em>, 2022.</p>
+              <span class="press-read-more">Read article</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Ann Meleney. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.1}s`;
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

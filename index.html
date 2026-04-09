@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ann Meleney — Artist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#" class="nav-name">Ann Meleney</a>
+    <ul>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="media.html">Press</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <img class="hero-island" src="images/mv-outline.png" alt="" aria-hidden="true">
+    <div class="hero-text">
+      <h1>Ann Meleney</h1>
+      <p class="subtitle">Mixed Media Artist</p>
+    </div>
+    <div class="hero-accent"></div>
+  </header>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="section-header">
+      <h2>Work</h2>
+      <p>A selection of recent and ongoing pieces</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-title="Contained by Lace" data-medium="Collage" data-year="2024">
+        <img src="images/contained by lace - ann meleney.jpg" alt="Contained by Lace">
+        <div class="gallery-overlay">
+          <span class="overlay-title">Contained by Lace</span>
+          <span class="overlay-meta">Collage &middot; 2024</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-title="Golden Migration" data-medium="Mixed media" data-year="2026">
+        <img src="images/golden migration - ann meleney.jpg" alt="Golden Migration">
+        <div class="gallery-overlay">
+          <span class="overlay-title">Golden Migration</span>
+          <span class="overlay-meta">Mixed media &middot; 2026</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-title="Golden Trails of Whales" data-medium="Collage" data-year="2024">
+        <img src="images/golden trails of whales- ann meleney - collage - 2024.jpeg" alt="Golden Trails of Whales">
+        <div class="gallery-overlay">
+          <span class="overlay-title">Golden Trails of Whales</span>
+          <span class="overlay-meta">Collage &middot; 2024</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-title="Blue Wave" data-medium="Collage" data-year="2024">
+        <img src="images/blue wave- ann meleney - collage - 2024.jpeg" alt="Blue Wave">
+        <div class="gallery-overlay">
+          <span class="overlay-title">Blue Wave</span>
+          <span class="overlay-meta">Collage &middot; 2024</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-title="Rising Sun Over Water" data-medium="Collage" data-year="2024">
+        <img src="images/rising sun over water - ann meleney - collage - 2024.jpeg" alt="Rising Sun Over Water">
+        <div class="gallery-overlay">
+          <span class="overlay-title">Rising Sun Over Water</span>
+          <span class="overlay-meta">Collage &middot; 2024</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-title="Unwrapping a Wave" data-medium="Collage" data-year="2024">
+        <img src="images/unwrapping a wave- ann meleney - collage - 2024.jpeg" alt="Unwrapping a Wave">
+        <div class="gallery-overlay">
+          <span class="overlay-title">Unwrapping a Wave</span>
+          <span class="overlay-meta">Collage &middot; 2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous">&#8592;</button>
+    <button class="lightbox-next" aria-label="Next">&#8594;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <div class="lightbox-caption">
+        <span id="lightbox-title"></span>
+        <span id="lightbox-meta"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-image-wrap">
+        <img src="images/portrait - ann meleney - 2016.png" alt="Ann Meleney" class="about-portrait">
+      </div>
+      <div class="about-text">
+        <h2>About</h2>
+        <p>Ann Meleney moved to Martha's Vineyard in 2012 and never looked back. The island awakened something in her, drawing her fully into her artistic life and into the heart of its community. Featherstone Center for the Arts became a second home — a place to deepen her practice across mixed media and collage, and to venture into new territory, most recently ceramics. Her work draws from the natural world, from animals and the living landscape around her, but she isn't afraid to turn her eye toward the political — meeting the moment with the same directness she brings to everything else.</p>
+        <p>Life off the canvas is just as rich. Ann teaches swim to babies and children with special needs, does water aerobics, and hosts the kind of Friday neighborhood dinners people look forward to all week. Summers mean long afternoons on the porch with board games and whoever wanders by. At the center of it all are her two granddaughters, Anya and Ramona, both two years old.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-header">
+      <h2>Contact</h2>
+      <p>Inquiries, commissions, and collaborations welcome</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:annmeleney@yahoo.com" class="contact-link">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">annmeleney@yahoo.com</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Ann Meleney. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
