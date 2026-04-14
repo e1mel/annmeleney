@@ -6,14 +6,14 @@
 }
 
 :root {
-  --cream:      #f7f4ef;
-  --warm-white: #fdfbf8;
-  --blush:      #e8c9bb;
-  --dusty-rose: #c9938a;
-  --sage:       #a8b5a0;
-  --ink:        #3a3530;
-  --ink-light:  #7a7068;
-  --border:     rgba(58, 53, 48, 0.12);
+  --cream:      #f0f4f8;
+  --warm-white: #f7fafc;
+  --blush:      #b8d4e8;
+  --dusty-rose: #5e8fa8;
+  --sage:       #8ab5b8;
+  --ink:        #263340;
+  --ink-light:  #5a7080;
+  --border:     rgba(38, 51, 64, 0.12);
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans:  'Jost', system-ui, sans-serif;
@@ -110,27 +110,30 @@ nav ul a:hover {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 20% 40%, rgba(232, 201, 187, 0.45) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 70% at 80% 70%, rgba(168, 181, 160, 0.3) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 40% at 55% 20%, rgba(201, 147, 138, 0.18) 0%, transparent 50%);
+    radial-gradient(ellipse 80% 60% at 20% 40%, rgba(138, 181, 184, 0.4) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 70% at 80% 70%, rgba(94, 143, 168, 0.25) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 55% 20%, rgba(184, 212, 232, 0.35) 0%, transparent 50%);
   pointer-events: none;
 }
 
-.hero-island {
+.hero-whales {
   position: absolute;
-  width: min(85vw, 900px);
-  opacity: 0.18;
-  top: 50%;
-  left: 50%;
-  transform: translate(-57.5%, -50%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 42%;
+  object-fit: cover;
+  object-position: top center;
+  opacity: 0.08;
+  filter: hue-rotate(-95deg) saturate(0.7) brightness(0.7);
+  mix-blend-mode: multiply;
   pointer-events: none;
-  filter: invert(1) brightness(2);
-  mix-blend-mode: screen;
 }
 
 .hero-text {
   position: relative;
   text-align: center;
+  margin-bottom: 15%;
 }
 
 .hero-text h1 {
@@ -328,7 +331,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
   gap: 5rem;
-  align-items: start;
+  align-items: center;
 }
 
 .about-image-wrap {
