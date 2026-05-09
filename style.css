@@ -45,10 +45,44 @@ a {
   text-decoration: none;
 }
 
+/* ── Mother's Day Banner ────────────────────────────────── */
+.mothers-day-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  height: 38px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f2e0e8 0%, #e8d8f0 50%, #d8eaf4 100%);
+  border-bottom: 1px solid rgba(180, 140, 160, 0.2);
+}
+
+.banner-track {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 22s linear infinite;
+}
+
+.banner-track span {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ── Nav ────────────────────────────────────────────────── */
 nav {
   position: fixed;
-  top: 0;
+  top: 38px;
   left: 0;
   right: 0;
   z-index: 100;
