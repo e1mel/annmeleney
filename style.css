@@ -244,6 +244,16 @@ section {
   transform: scale(1.04);
 }
 
+.gallery-img-zoom-br {
+  transform: scale(1.43);
+  transform-origin: bottom right;
+  object-position: bottom right;
+}
+
+.gallery-item:hover .gallery-img-zoom-br {
+  transform: scale(1.487);
+}
+
 .gallery-overlay {
   position: absolute;
   inset: 0;
