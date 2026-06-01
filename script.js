@@ -16,7 +16,7 @@ function openLightbox(index) {
   lbImg.src   = img.src;
   lbImg.alt   = img.alt;
   lbTitle.textContent = item.dataset.title  || '';
-  lbMeta.textContent  = [item.dataset.medium, item.dataset.year].filter(Boolean).join(' · ');
+  lbMeta.textContent  = [item.dataset.medium, item.dataset.dimensions, item.dataset.year].filter(Boolean).join(' · ');
   lightbox.classList.add('active');
   lightbox.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
